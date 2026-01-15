@@ -1,0 +1,71 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/sections/Footer.astro';
+import Header from '../components/sections/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import HeroSection from '../components/sections/HeroSection.astro';
+import SkillsSection from '../components/sections/SkillsSection.astro';
+import { skills } from '../data/skills';
+import WorkExperience from '../components/sections/WorkExperience.astro';
+import Articles from '../components/sections/Articles.astro';
+import Kombi from '../components/sections/Kombi.astro';
+import Doorbell from '../components/sections/Doorbell.astro';
+
+import { work } from '../data/work';
+import Studies from '../components/sections/Studies.astro';
+import { studies } from '../data/studies';
+import Carousel from '../components/ui/carousel/Carousel.astro';
+import { logos } from '../data/logos';
+import ArrowSeparator from '../components/ui/separator/ArrowSeparator.astro'
+import GlowLineSeparator from '../components/ui/separator/GlowLineSeparator.astro'
+
+// Logos
+import astroLogo from '../assets/logos/Astro-logo.svg';
+import googleAdsLogo from '../assets/logos/GoogleAds-logo.svg';
+
+// skills are imported from src/data/skills
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Site Author',
+      url: new URL('/hasac/', Astro.site).toString(),
+      logo: new URL('/hasac/favicon.svg', Astro.site).toString(),
+      sameAs: [
+        '',
+        '',
+      ],
+    })} />
+	</head>
+	<body>
+		<Header />
+		<main>
+      <HeroSection
+        title="Ağıllı Ev Həlli"
+        subtitle=""
+        showCTA
+        primaryCTA={{ text: 'Layihələr', href: '/hasac/portfolio' }}
+        secondaryCTA={{ text: 'Məqalələr', href: '/hasac/blog' }}
+      />
+     
+
+    <section class="py-6">
+      <ArrowSeparator />
+		<Doorbell title="Doorbell"/>
+      <GlowLineSeparator />
+	<Articles title="Məqalələr"/>
+      <GlowLineSeparator />
+	<Kombi title="Kombi"/>
+      <GlowLineSeparator />
+	
+    </section>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import GlowLineSeparator from '@/components/ui/separator/GlowLineSeparator.astro';
+const pageTitle = 'Haqqımızda';
+const pageDescription = '';
+---
+
+<Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false}>
+<section class="py-16 px-6 transition-colors duration-300 bg-white dark:bg-slate-950">
+  <div class="max-w-4xl mx-auto">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold mb-4 text-slate-900 dark:text-white">
+        Eviniz üçün Mühəndis Həlləri
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+        Yaşayış sahələrini daha ağıllı, təhlükəsiz və səmərəli etmək məqsədi ilə yola çıxan texnologiya mütəxəssisləriyik.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <div class="p-8 rounded-3xl border transition-all duration-300 
+                  bg-blue-50 border-blue-100 hover:shadow-lg 
+                  dark:bg-blue-950/20 dark:border-blue-900/30 dark:hover:bg-blue-950/30">
+        <div class="text-3xl mb-4">🔒</div>
+        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-blue-400">Lokal və Gizli</h3>
+        <p class="text-slate-600 dark:text-slate-400">
+          Home Assistant-ın gücü ilə məlumatlarınız yalnız sizin evinizdəki cihazda qalır. Cloud asılılığına son!
+        </p>
+      </div>
+
+      <div class="p-8 rounded-3xl border transition-all duration-300 
+                  bg-emerald-50 border-emerald-100 hover:shadow-lg 
+                  dark:bg-emerald-950/20 dark:border-emerald-900/30 dark:hover:bg-emerald-950/30">
+        <div class="text-3xl mb-4">🏠</div>
+        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-emerald-400">Divarları Deşmədən</h3>
+        <p class="text-slate-600 dark:text-slate-400">
+          Simsiz (Wireless) montaj sayəsində təmirinizə ziyan gətirmədən ən mürəkkəb sensorları quraşdırırıq.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 p-8 rounded-3xl text-center transition-all duration-300
+                bg-slate-900 text-white 
+                dark:bg-slate-900 dark:border dark:border-slate-800">
+      <p class="text-2xl italic font-light mb-6">"Texnologiya mürəkkəb olmamalıdır."</p>
+      
+      <div class="flex flex-wrap justify-center gap-3 text-xs font-mono">
+        {['#Zigbee', '#Matter', '#Thread', '#LocalControl', '#EventDriven'].map((tag) => (
+          <span class="px-3 py-1 rounded-full bg-slate-800 text-blue-400 border border-slate-700">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+  <p>
+  <GlowLineSeparator />
+  </p>
+
+  
+
+</Layout>
