@@ -9,8 +9,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://jakobnutson.github.io/hasac/',
-     base: '/hasac/',
+    site: 'https://zerifevaz.github.io',
+     base: '/zerifev/',
   integrations: [mdx(), sitemap()],
 
   vite: {
