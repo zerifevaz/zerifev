@@ -10,7 +10,7 @@ export const projects = [
 		techStack: "Home Assistant • Zigbee • Alarmo • Matter",
 		description: "Qapı və pəncərələr üçün tam kabelsiz sensor şəbəkəsinin qurulması. 0.1s gecikmə ilə anlıq bildirişlər və lokal (cloud-free) siqnalizasiya idarəetməsi.",
 		ctaText: "Detallara bax →",
-		ctaLink: "/hasac/blog/security-system",
+		ctaLink: "/zerifev/blog/security-system",
 		icon: Aqara
 	},
 	{
@@ -18,7 +18,7 @@ export const projects = [
 		techStack: "Zigbee • Dry Contact • Home Assistant • ESPHome",
 		description: "Qazan və kombilərin 'Dry Contact' (Quru Kontakt) vasitəsilə inteqrasiyası. Temperatur qrafiklərinə və varlıq sensorlarına əsaslanan 30% enerji qənaəti.",
 		ctaText: "Texniki Analiz →",
-		ctaLink: "/hasac/blog/thermostat-integration",
+		ctaLink: "/zerifev/blog/thermostat-integration",
 		icon: PythonIcon
 	},
 	{
@@ -26,7 +26,7 @@ export const projects = [
 		techStack: "Frigate AI • RTSP • WebSockets • Home Assistant",
 		description: "Süni intellekt əsaslı insan tanıma sistemi və görüntülü qapı zəngi inteqrasiyası. Bütün görüntülərin lokal NVR-da tam məxfi saxlanılması.",
 		ctaText: "Keysi Oxu →",
-		ctaLink: "/hasac/blog/doorbell",
+		ctaLink: "/zerifev/blog/doorbell",
 		icon: PhoenixIcon
 	},
 	{
@@ -34,7 +34,7 @@ export const projects = [
 		techStack: "Zigbee 3.0 • Thread • MQTT • Docker",
 		description: "Evin hər bir nöqtəsini əhatə edən 'Self-healing' (özünü bərpa edən) şəbəkə arxitekturası. Yüzlərlə cihazın stabil işləməsi üçün mərkəzi hab konfiqurasiyası.",
 		ctaText: "Hardware Bələdçisi →",
-		ctaLink: "/hasac/blog/niyəsimsiz",
+		ctaLink: "/zerifev/blog/niyəsimsiz",
 		icon: N8nIcon
 	},
 ];
